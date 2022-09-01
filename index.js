@@ -31,3 +31,26 @@ const age = (birthDate) => {
 
 const dob = new Date(2000, 3, 29, 5, 0, 0, 0);
 age(dob);
+
+let animation = anime({
+  targets: document.getElementById("animate"),
+  translateY: 150,
+  loop: true,
+  direction: "alternate",
+  easing: "easeInOutSine",
+});
+
+let profession = anime({
+  targets: document.getElementById("profession"),
+  translateY: 250,
+  loop: true,
+  easing: "easeInOutSine",
+  direction: "alternate",
+});
+
+let img = anime({
+  targets: document.getElementById("img"),
+  rotate: 360,
+  loop: 2,
+  direction: "alternate",
+});

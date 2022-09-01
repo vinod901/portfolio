@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" href="iron-man.svg" />
     <title>Vinod Reddy</title>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   </head>
   <body>
     <div id="root">
       <div id="navbar">
-        <div class="profession">{ Developer }</div>
+        <div class="profession" id="profession">{ Developer }</div>
         <div class="tabs">
           <button class="tab" id="home">Home</button>
           <button class="tab" id="about">About</button>
@@ -19,13 +20,13 @@
       </div>
       <div class="card">
         <div class="intro">
-          <div>
+          <div id="animate">
             <div class="line"></div>
             I'm Vinod Yerrapureddy, <br />
             a <span class="job">Software Developer</span>
           </div>
         </div>
-        <img class="profile" src="vinod.jpg" alt="#" />
+        <img class="profile" id="img" src="vinod.jpg" alt="#" />
       </div>
     </div>
     <div id="patientAge"></div>
